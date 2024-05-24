@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Comprehensive Company Analysis</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Rana Rabee</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Main page</a></li>
+							<li class="active"><a href="#">Comprehensive Company Analysis</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/rana-m-rabee/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://github.com/RanaR-M" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Comprehensive Company Analysis</h1>
+                                    <p>A 3 page Power BI dashboard that analyzes overall company performance, salesperson report, and inventory report.
+										<br> Uses Adventure works 2022 OLTP database with import mode and direct query mode.
+									</p>
+								</header>
+								<div class="container"><iframe class="responsive-iframe" title="detailed company report"height="500" width = "700" src="https://app.powerbi.com/view?r=eyJrIjoiYWU4NDY1ZjQtMzA1YS00NjUxLTg2ZTMtMmFmMDlmYzMyNGJkIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9" frameborder="0" allowFullScreen="true"></iframe></div>
+                                <div class = "project explain">
+                                    <br>
+                                    <h3>Insights</h3>
+                                    <h4>Overall Company Performance</h4>
+                                    <ul>
+                                        <li>total amount sold is lower than total due amount</li>
+                                        <li>total orders are higer in Q4 but avg amount is lower than in Q1</li>
+                                        <li>southwest is the hightest selling territory, canda and northwest are similiar in amount of money earned</li>
+                                        <li>bikes are the most QTY sold followed closely by clothing</li>
+                                    </ul>
+
+                                    <h4>Salesperson Report</h4>
+                                    <ul>
+                                        <li>by quarter linda mitchell is the sales person that has the most sales, while syed abbas is the lowest sellign sales person</li>
+                                        <li>by month its a tie between linda mitchell and jar pak for the the highest selling sales person, the lowest selling salesperson is still syed abbas</li>
+                                        <li>if we go to the dril through of linda mitche by quarter 3 we find its 119 for count of orders while jae pak is 90</li>
+                                    </ul>
+
+                                    <h4>Inventory Report</h4>
+                                    <ul>
+                                        <li>canda is the highest selling territory by all categories, components sell very little in australia, accessories sell little in central</li>
+                                        <li>bikes have the highest avg unit price despite selling the highest quantites, acessories have the lowest avg unit price</li>
+                                        <li>if we look at the average order qty we find that acessories have the most qty sold, second is clothing which have similiar avg unit price to acessories</li>
+                                    </ul>
+
+                                    <h3>The Process</h3>
+                                    <p>The data (<a href = "https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms">link</a>) has many tables but we used some of it
+                                    <br>The data was extracted and modeled in a <i>star schema</i> with the 6 dimentions & one fact table
+                                    <img src="images/model_view_company_report.png" class="image fit"></p>
+                                    <h4>Measures</h4>
+                                    For this particular analysis we  used measures 
+                                        <ul>
+                                            <li># orders</li>
+                                            <li>AVG Freight</li>
+                                            <li>AVGAmountQ1</li>
+                                            <li>AVGAmountQ4</li>
+                                            <li>MaxYear</li>
+                                            <li>prevMTH</li>
+                                            <li>prevQTR</li>
+                                            <li>salesQ1</li>
+                                            <li>salesQ4</li>
+                                            <li>sumAMT</li>
+                                            <li>TotalDue</li>
+                                            <li>TotalTax</li>
+                                        </ul>
+                                    <h4>drill through</h4>
+                                    For salesperson report drilltrough was utilized for quarter and month by salespersons it shows previous month or previous quarter bases on selection
+                                    <br><br>
+                                    <h4>Bookmarks</h4>
+                                    <ul>
+                                        <li>the buttons that changes from total orders & avg amount</li>
+                                        <li>the buttons that changes quarter & month</li>
+                                    </ul>
+                                    </p>
+                                </div>  							
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section class="split contact">
+							<section class="alt">
+								<h3>Location</h3>
+								<p>Cairo, Egypt</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p>(+20)1097363250</p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="mailto:ranamrabee@gmail.com">ranamrabee@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://www.linkedin.com/in/rana-m-rabee/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/RanaR-M" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
